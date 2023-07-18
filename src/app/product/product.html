@@ -12,6 +12,9 @@
 <button mat-raised-button color="primary" #btn (click)="add()">add</button>
 <a routerLink = "/login">login</a>
 <a routerLink = "/register">Register</a>
+<ng-container *ngIf="!addClicked">
+  <p>Click Add!!</p>
+</ng-container>
 <ng-container *ngFor="let Value of Values.slice(1).reverse() " >
   <ul class="overflow_container" style = "list-style-type:none" >
     <li class="overflow_subcontiner">{{Value.inputVal1| titlecase}}</li>
