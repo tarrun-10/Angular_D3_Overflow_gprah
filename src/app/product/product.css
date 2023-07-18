@@ -1,0 +1,35 @@
+.overflow_container{
+    display: flex;   
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    height: 300px ;
+    width: auto;
+    justify-content: center;
+    margin: 30px;
+  }
+  .overflow_subcontiner{
+    /* flex: 1;  */
+    color: black;
+    background-color: white;
+    box-shadow: 1px;
+    text-align: center;
+    height: 30px;
+    width: 200px;
+    margin: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* margin: 10px; */
+  }
+
+
+  #D3_graph{
+    height: auto ; 
+    width : auto;
+    justify-content: center;
+    /* padding-left: 100px; */
+    /* padding-top: 50px; */
+  }
+  
+  input{
+    margin: 10PX;
+}

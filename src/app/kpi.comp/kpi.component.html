@@ -1,0 +1,21 @@
+<div class="kpi-container">
+    <!-- <fa-icon class="info-icon" [icon]="faInfoCircle" ngbTooltip="{{description}}"></fa-icon> -->
+    <!-- <fa-icon class="info-icon" [icon]="faInfoCircle" ngbTooltip="{{description}}"></fa-icon> -->
+    <p>{{title}}</p>
+    
+    <div class="kpi-body" *ngIf="data.length>0; else noData">
+        <div class="kpi-value" [ngClass]="trend">
+            {{value.y.toFixed(3)}}
+            <p class="timestamp">Measured at: {{value.x | date:'YYYY-MM-dd HH:mm:ss'}}</p>        
+        </div>
+        <div class="kpi-trend" #container>
+            <svg id="plot" #svg></svg>
+        </div>
+    </div>
+    <ng-template #noData>
+        <div class="no-data">
+            Data not available
+        </div>
+    </ng-template>
+
+</div>
